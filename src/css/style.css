@@ -219,6 +219,15 @@ html {
 .s4 {
   background-color: #FFFFFF;
   border-bottom: 1px solid #c1c1c1; }
+  .s4 .main-form {
+    background-color: #EAEAEA; }
+    .s4 .main-form span {
+      background-color: #fff; }
+    .s4 .main-form .form-control {
+      box-shadow: none; }
+    .s4 .main-form .btn-color {
+      background-color: #000;
+      color: #fff; }
 
 @media screen and (max-width: 768px) {
   .intro-wrapper .right-column {
