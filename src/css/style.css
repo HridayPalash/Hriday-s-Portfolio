@@ -200,6 +200,21 @@ html {
 .s3 {
   background-color: #EAEAEA;
   border-bottom: 1px solid #c1c1c1; }
+  .s3 .card {
+    margin: 10px 0px;
+    border: 1px solid #c1c1c1; }
+    .s3 .card .card-body {
+      background-color: #fff;
+      padding: 15px; }
+      .s3 .card .card-body .card-title {
+        color: black; }
+      .s3 .card .card-body .card-text {
+        color: 4b5156;
+        font-size: 14px;
+        margin-bottom: 5px; }
+      .s3 .card .card-body a {
+        text-decoration: none;
+        margin-top: 5px; }
 
 .s4 {
   background-color: #FFFFFF;
