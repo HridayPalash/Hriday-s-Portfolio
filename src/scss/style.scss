@@ -208,9 +208,40 @@ html{
 // s4 Section End
 // Media query
 @media screen and (max-width:768px){
+    .greeting-wrapper{
+        h1{
+            font-size: 48px;
+        }
+    }
     .intro-wrapper {
+        .left-column{
+            min-height: 20em !important;
+        }
         .right-column{
+            min-height: 20em !important;
+            padding-top: -30px;
+            padding-bottom: 30px;
             justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .greeting-wrapper {
+        min-height: 14em !important;
+    }
+    .intro-wrapper{
+        .right-column{
+            #preview-shadow{
+                width: 230px !important;
+                height: 225px !important;
+                #preview{
+                    width: 230px !important;
+                    h3{
+                        font-size: 24px;
+                        margin-bottom: -10px !important;
+                    }
+                }
+            }
         }
     }
 }
