@@ -1,0 +1,51 @@
+// Extend Option Start
+%margin-padding0{
+    margin: 0;
+    padding: 0;
+}
+// Circle Design
+%circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    @extend %box-shadow;
+}
+// Theme Option Design
+%theme{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px;
+    @extend %box-shadow;
+    cursor: pointer;
+    &:hover{
+        border-width: 5px;
+    }
+}
+// Right Column Border corner design
+%corner{
+    width: 7px;
+    height: 7px;
+    border: 1.5px solid #17a2b8;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+}
+
+// Box shadow
+%box-shadow{
+    -webkit-box-shadow: -1px 1px 3px -1px grba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px grba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px grba(0, 0, 0, 0.75);
+}
+// Extend Option End
+// Color
+$mainColor: #EAEAEA;
+$secondaryColor :#FFFFFF;
+$mainText: black;
+$secondaryText: #4b5156;
+$borderColor:#c1c1c1;
+$themeBorder:#24292e;
+$previewBg: rgba(251, 249, 243, 0.8);
+$previewShadow: #f0ead6;

@@ -1,3 +1,187 @@
-body {
-    background: #1a51d333;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
+@import "variable";
+@import "typography";
+html{
+    scroll-behavior: smooth;
 }
+// s1 Section Start
+.s1{
+    background-color: $mainColor;
+    border-bottom: 1px solid $borderColor;
+    .greeting-wrapper{
+        min-height: 10em;
+    }
+    .intro-wrapper{
+        background-color: $secondaryColor;
+        border: 1px solid $borderColor;
+        @extend %box-shadow;
+        border-radius: 5px 5px 0 0;
+        .nav-column{
+            min-height: 3em;
+            background-color: $mainColor;
+            border-bottom: 1px solid $borderColor;
+            border-radius: 5px 5px 0 0;
+            .nav-circle{
+                padding: 10px;
+                .circle1 {
+                    background-color: #FC6058;
+                    @extend %circle;
+                }
+                .circle2 {
+                    background-color: #FEC028;
+                    @extend %circle;
+                }
+                .circle3 {
+                    background-color: #2ACA3E;
+                    @extend %circle;
+                }
+            }
+            .navigation{
+                padding: 10px;
+                margin: 0;
+                li{
+                    display: inline-block;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .left-column {
+            min-height: 30em;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .left-content{
+                img{
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    border: 2px solid $borderColor;
+                }
+                .theme-option-circle{
+                    .light-mode {
+                        background-color: #fff;
+                        @extend %theme;
+                        border: 2px solid $themeBorder;
+                    }
+                    .blue-mode {
+                        background-color: #223a50;
+                        @extend %theme;
+                        border: 2px solid $themeBorder;
+                    }
+                    .green-mode {
+                        background-color: #78866b;
+                        @extend %theme;
+                        border: 2px solid $themeBorder;
+                    }
+                    .purple-mode {
+                        background-color: #7E4C74;
+                        @extend %theme;
+                        border: 2px solid $themeBorder;
+                    }
+                }
+                #settings-note{
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
+        }
+        .right-column {
+            min-height: 30em;
+            #preview-shadow {
+                width: 300px;
+                height: 210px;
+                padding-left: 30px;
+                padding-top: 30px;
+                background-color: $previewShadow;
+                #preview {
+                    width: 300px;
+                    border: 1.5px solid #17a2b8;
+                    background-color: $previewBg;
+                    padding: 15px;
+                    position: relative;
+
+                    .corner1 {
+                        top: -5px;
+                        left: -5px;
+                        @extend %corner;
+                    }
+
+                    .corner2 {
+                        top: -5px;
+                        right: -5px;
+                        @extend %corner;
+                    }
+
+                    .corner3 {
+                        bottom: -5px;
+                        right: -5px;
+                        @extend %corner;
+                    }
+
+                    .corner4 {
+                        bottom: -5px;
+                        left: -5px;
+                        @extend %corner;
+                    }
+                }
+            }
+        }
+    }
+}
+// s1 Section End
+// s2 Section Start
+.s2 {
+    background-color: $secondaryColor;
+    border-bottom: 1px solid $borderColor;
+    .about-me{
+        p{
+            margin: 15px 0;
+            a{
+                text-decoration: none;
+            }
+        }
+        .skill-option {
+            background-color: $previewShadow;
+            padding: 10px 0px;
+
+            ul {
+                margin: 0;
+            }
+        }
+    }
+    .social-icon{
+        
+        a{
+            text-decoration: none;
+        }
+    }
+}
+// s2 Section End
+// s3 Section Start
+.s3 {
+    background-color: $mainColor;
+    border-bottom: 1px solid $borderColor;
+}
+// s3 Section End
+// s4 Section Start
+.s4 {
+    background-color: $secondaryColor;
+    border-bottom: 1px solid $borderColor;
+}
+// s4 Section End
+// Media query
+@media screen and (max-width:768px){
+    .intro-wrapper {
+        .right-column{
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+
