@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
 @import "variable";
 @import "typography";
+@import "mainColor";
+// Tag Coloring
+h1,h2,h3,h4,h5,h6,strong{
+    color: $mainText;
+}
+p,li{
+    color: $secondaryText;
+}
+// Tag Coloring End
 html{
     scroll-behavior: smooth;
 }
@@ -198,9 +207,10 @@ html{
         }
         .form-control{
             box-shadow: none;
+            background-color: $secondaryColor;
         }
         .btn-color{
-            background-color: #000;
+            background-color: $buttonColor;
             color: #fff;
         }
     }
